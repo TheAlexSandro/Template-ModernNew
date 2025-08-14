@@ -1,1 +1,1 @@
-# BalitarNFT
+# Template ModernNew
