@@ -1,0 +1,43 @@
+main {
+    margin-top: 10%;
+    padding: 0 50px;
+}
+
+
+/* SECTION[PLANK] */
+
+#plank {
+    background-color: hsl(220, 12%, 45%);
+    margin-bottom: 20px;
+}
+
+/* SECTION[ABOUT] */
+.about h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.about p {
+    margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media (width < 700px) {
+    #plank {
+        margin-top: 30%;
+    }
+}
+
+@media (width > 700px) and (width < 1300px) {
+    #plank {
+        margin-top: 10px;
+    }
+
+    .about h1 {
+        font-size: 20px;
+    }
+
+    main {
+        margin-bottom: 80%;
+    }
+}

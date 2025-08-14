@@ -1,0 +1,125 @@
+/*
+* Copyright 2025. All Rights reserved.
+* DILARANG MENYALIN, MENGUBAH, MENGGUBAH, MEMODIFIKASI KODE CSS INI.
+*/
+
+
+/* MAIN PADDING */
+
+main {
+    margin-top: 40px;
+}
+
+
+/* SECTION[SOON] */
+
+.coming__soon {
+    padding: 0 5%;
+    margin-top: 120px;
+}
+
+.coming__soon .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coming__soon .left {
+    max-width: 40%;
+}
+
+.coming__soon h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    max-width: 100%;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.coming__soon p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.coming__soon a {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.coming__soon a:hover {
+    transform: scale(1.1);
+    background-color: var(--first-color)
+}
+
+.coming__soon .gif {
+    max-width: 50%;
+}
+
+.coming__soon .gif video {
+    display: grid;
+    place-items: center;
+    width: 500px;
+    height: 100%;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+
+/* RESPONSIVE */
+
+@media (width<1025px) {
+    .coming__soon {
+        margin-top: 150px;
+    }
+    .coming__soon .container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .coming__soon .left {
+        margin-top: 50px;
+        max-width: 100%;
+    }
+    .coming__soon .gif {
+        margin-top: -50px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .coming__soon .gif video {
+        width: 350px;
+        height: auto;
+        border-radius: 20px;
+    }
+}
+
+@media (width>767px) and (width<1024px) {
+    main {
+        height: 70vh;
+    }
+    .coming__soon .gif video {
+        width: 400px;
+        height: auto;
+        border-radius: 20px;
+    }
+    .coming__soon h1 {
+        font-size: 60px;
+        line-height: 1.1;
+        max-width: 70%;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+}
+
+@media (width: 1024px) and (height: 600px) {
+    main {
+        height: 120vh;
+    }
+}
